@@ -1,0 +1,26 @@
+- Ligar apache
+- Ligar MySQL
+
+Acessar o URL no navegador:
+
+http://localhost/Front/login.php
+
+acesso:
+---------------------------
+login: admin
+
+senha: Farofada123
+---------------------------
+outros acessos disponíveis por enquanto:
+
+login: user1
+
+senha: user1666
+
+login: user2
+
+senha: user2666
+
+outros acessos indisponíveis por enquanto:
+
+senacrs - pucrs - unissinos - etc ?

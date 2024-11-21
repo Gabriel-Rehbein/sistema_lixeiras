@@ -1,0 +1,178 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilos globais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  color: #444;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #0077cc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Seções principais */
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Espaçamento entre seções */
+}
+
+/* Seções */
+section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Espaçamento adicional entre elementos */
+}
+
+section h2 {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Links de navegação */
+section p a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+}
+
+section p a:hover {
+  color: #005999;
+}
+
+/* Cartões de Lixeiras */
+.trash-history {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espaçamento entre os cartões */
+  justify-content: center; /* Centralizar os cartões */
+}
+
+.trash-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(33.333% - 20px);
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.trash-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.trash-info h3 {
+  font-size: 1.4em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.trash-info p {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Ícones de status */
+.status-icon {
+  font-size: 1.2em;
+}
+
+/* Controles de administração dentro dos cartões */
+.admin-controls {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espaçamento entre os botões */
+}
+
+.admin-controls button {
+  background-color: #ff4c4c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin-controls button:hover {
+  background-color: #cc0000;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .trash-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .trash-card {
+    width: 100%;
+  }
+
+  header h1 {
+    font-size: 1.5em;
+  }
+}
